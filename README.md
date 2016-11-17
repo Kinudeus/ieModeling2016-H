@@ -1,6 +1,1 @@
-Yogi~~~
-
-Yogiだじぇ〜〜〜
-
-
-Twitter -> @KuzuGateBot
+Test Readme.md text
