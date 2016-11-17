@@ -1,3 +1,6 @@
 Yogi~~~
 
 Yogiだじぇ〜〜〜
+
+
+Twitter -> @KuzuGateBot
