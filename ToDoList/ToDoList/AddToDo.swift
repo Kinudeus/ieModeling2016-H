@@ -10,15 +10,17 @@ import UIKit
 
 var todoItem = [String]()
 
-
 class AddToDo: UIViewController {
     
     @IBOutlet weak var TextField: UITextField!
     
+    //ADDボタンを押した時にリストに追加(空白の時は追加されない)
     @IBAction func AddItem(_ sender: Any) {
-        todoItem.append(TextField.text!)
-        UserDefaults.init().set(todoItem, forKey: "todoList")
-        TextField.text = ""
+        if TextField.text != "" {
+            todoItem.append(TextField.text!)
+            UserDefaults.init().set(todoItem, forKey: "todoList")
+            TextField.text = ""
+        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -30,25 +32,14 @@ class AddToDo: UIViewController {
         return true
     }
     
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Do any additional setup after loading the view.
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
-    */
 
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 }

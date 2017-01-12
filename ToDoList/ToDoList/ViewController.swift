@@ -12,12 +12,61 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var todolistTable: UITableView!
     
+    @IBAction func testedit(_ sender: UIBarButtonItem) {
+        func setEditing(editing: Bool, animated: Bool) {
+            super.setEditing(editing, animated: animated)
+            todolistTable.isEditing = editing
+        }
+    }
+    
+   	
+    @IBAction func testbtn(_ sender: Any) {
+        
+        
+//        if(todolistTable.isEditing == true) {
+//            todolistTable.isEditing = false
+//        } else {
+//            todolistTable.isEditing = true
+//        }
+//        
+        
+    }
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        
+        // TableViewを編集可能にする
+        todolistTable.setEditing(editing, animated: true)
+        
+        // 編集中のときのみaddButtonをナビゲーションバーの左に表示する
+        if editing {
+            print("編集中")
+//            let addButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.add, target: self, action: #selector(ViewController.addCell(sender:)))
+//            self.navigationItem.setLeftBarButton(addButton, animated: true)
+        } else {
+            print("通常モード")
+            self.navigationItem.setLeftBarButton(nil, animated: true)
+        }
+    }
+    
+        
+//        if todolistTable.isEditing == true {
+//            todolistTable.isEditing = false
+//        }else{
+//            todolistTable.isEditing = true
+//        }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         if UserDefaults.init().object(forKey: "todoList") != nil {
             todoItem = UserDefaults.init().object(forKey: "todoList") as! [String]
         }
+        
+//        self.navigationItem.leftBarButtonItem = self.editButtonItem
+//        self.navigationItem.title = "テスト"
+        
+        
     }
     
     //配列のカウント
@@ -27,44 +76,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //リストに表示
     internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellValue = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-//        let cellValue = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
+//        let cellValue = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
+        let cellValue = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
         cellValue.textLabel?.text = todoItem[indexPath.row]
         return cellValue
     }
     
-    
-    private func tableView(_ tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath){
-        if editingStyle == UITableViewCellEditingStyle.delete{
-            todoItem.remove(at: indexPath.row)
-            UserDefaults.init().set(todoItem, forKey: "todoList")
-            todolistTable.reloadData()
-        }
-    }
-    
     //リストの削除
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            todoItem.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        }
-    }
-    
-//    private func tableView(_ tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-//        if editingStyle == .delete {
+//    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+//        if editingStyle == UITableViewCellEditingStyle.delete{
 //            todoItem.remove(at: indexPath.row)
 //            tableView.deleteRows(at: [indexPath], with: .fade)
+//            UserDefaults.init().set(todoItem, forKey: "todoList")
 //        }
 //    }
-
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        todolistTable.reloadData()
-//    }
-    
-
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 }
