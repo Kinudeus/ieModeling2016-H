@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FB3F7961E2FBD2400929DDB /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3FB3F78C1E2FBD2400929DDB /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3FB3F7A21E2FBEAB00929DDB /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB3F7A11E2FBEAB00929DDB /* NotificationCenter.framework */; };
+		3FB3F7A51E2FBEAB00929DDB /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB3F7A41E2FBEAB00929DDB /* TodayViewController.swift */; };
+		3FB3F7A81E2FBEAB00929DDB /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB3F7A61E2FBEAB00929DDB /* MainInterface.storyboard */; };
+		3FB3F7AC1E2FBEAB00929DDB /* wiget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3FB3F79F1E2FBEAB00929DDB /* wiget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3FBCB1841DF8FBD700319552 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCB1831DF8FBD700319552 /* AppDelegate.swift */; };
 		3FBCB1861DF8FBD700319552 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCB1851DF8FBD700319552 /* ViewController.swift */; };
 		3FBCB1891DF8FBD700319552 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBCB1871DF8FBD700319552 /* Main.storyboard */; };
@@ -18,6 +23,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3FB3F7941E2FBD2400929DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBCB1781DF8FBD700319552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FB3F78B1E2FBD2400929DDB;
+			remoteInfo = widget;
+		};
+		3FB3F7AA1E2FBEAB00929DDB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3FBCB1781DF8FBD700319552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3FB3F79E1E2FBEAB00929DDB;
+			remoteInfo = wiget;
+		};
 		3FBCB1951DF8FBD700319552 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3FBCB1781DF8FBD700319552 /* Project object */;
@@ -34,7 +53,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3FB3F79A1E2FBD2400929DDB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3FB3F7961E2FBD2400929DDB /* widget.appex in Embed App Extensions */,
+				3FB3F7AC1E2FBEAB00929DDB /* wiget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3FB3F78C1E2FBD2400929DDB /* widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB3F79F1E2FBEAB00929DDB /* wiget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = wiget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB3F7A11E2FBEAB00929DDB /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		3FB3F7A41E2FBEAB00929DDB /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		3FB3F7A71E2FBEAB00929DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		3FB3F7A91E2FBEAB00929DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBCB1801DF8FBD700319552 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FBCB1831DF8FBD700319552 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FBCB1851DF8FBD700319552 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +92,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3FB3F7891E2FBD2400929DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB3F79C1E2FBEAB00929DDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB3F7A21E2FBEAB00929DDB /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FBCB17D1DF8FBD700319552 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -76,12 +131,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FB3F7A01E2FBEAB00929DDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FB3F7A11E2FBEAB00929DDB /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3FB3F7A31E2FBEAB00929DDB /* wiget */ = {
+			isa = PBXGroup;
+			children = (
+				3FB3F7A41E2FBEAB00929DDB /* TodayViewController.swift */,
+				3FB3F7A61E2FBEAB00929DDB /* MainInterface.storyboard */,
+				3FB3F7A91E2FBEAB00929DDB /* Info.plist */,
+			);
+			path = wiget;
+			sourceTree = "<group>";
+		};
 		3FBCB1771DF8FBD700319552 = {
 			isa = PBXGroup;
 			children = (
 				3FBCB1821DF8FBD700319552 /* ToDoList */,
 				3FBCB1971DF8FBD700319552 /* ToDoListTests */,
 				3FBCB1A21DF8FBD700319552 /* ToDoListUITests */,
+				3FB3F7A31E2FBEAB00929DDB /* wiget */,
+				3FB3F7A01E2FBEAB00929DDB /* Frameworks */,
 				3FBCB1811DF8FBD700319552 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +167,8 @@
 				3FBCB1801DF8FBD700319552 /* ToDoList.app */,
 				3FBCB1941DF8FBD700319552 /* ToDoListTests.xctest */,
 				3FBCB19F1DF8FBD700319552 /* ToDoListUITests.xctest */,
+				3FB3F78C1E2FBD2400929DDB /* widget.appex */,
+				3FB3F79F1E2FBEAB00929DDB /* wiget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,6 +208,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3FB3F78B1E2FBD2400929DDB /* widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB3F7991E2FBD2400929DDB /* Build configuration list for PBXNativeTarget "widget" */;
+			buildPhases = (
+				3FB3F7881E2FBD2400929DDB /* Sources */,
+				3FB3F7891E2FBD2400929DDB /* Frameworks */,
+				3FB3F78A1E2FBD2400929DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widget;
+			productName = widget;
+			productReference = 3FB3F78C1E2FBD2400929DDB /* widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		3FB3F79E1E2FBEAB00929DDB /* wiget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FB3F7AD1E2FBEAB00929DDB /* Build configuration list for PBXNativeTarget "wiget" */;
+			buildPhases = (
+				3FB3F79B1E2FBEAB00929DDB /* Sources */,
+				3FB3F79C1E2FBEAB00929DDB /* Frameworks */,
+				3FB3F79D1E2FBEAB00929DDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wiget;
+			productName = wiget;
+			productReference = 3FB3F79F1E2FBEAB00929DDB /* wiget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		3FBCB17F1DF8FBD700319552 /* ToDoList */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FBCB1A81DF8FBD700319552 /* Build configuration list for PBXNativeTarget "ToDoList" */;
@@ -138,10 +249,13 @@
 				3FBCB17C1DF8FBD700319552 /* Sources */,
 				3FBCB17D1DF8FBD700319552 /* Frameworks */,
 				3FBCB17E1DF8FBD700319552 /* Resources */,
+				3FB3F79A1E2FBD2400929DDB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3FB3F7951E2FBD2400929DDB /* PBXTargetDependency */,
+				3FB3F7AB1E2FBEAB00929DDB /* PBXTargetDependency */,
 			);
 			name = ToDoList;
 			productName = ToDoList;
@@ -194,6 +308,16 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = RyukyuUniversity;
 				TargetAttributes = {
+					3FB3F78B1E2FBD2400929DDB = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2PJVDDC92U;
+						ProvisioningStyle = Automatic;
+					};
+					3FB3F79E1E2FBEAB00929DDB = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 2PJVDDC92U;
+						ProvisioningStyle = Automatic;
+					};
 					3FBCB17F1DF8FBD700319552 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 2PJVDDC92U;
@@ -227,11 +351,28 @@
 				3FBCB17F1DF8FBD700319552 /* ToDoList */,
 				3FBCB1931DF8FBD700319552 /* ToDoListTests */,
 				3FBCB19E1DF8FBD700319552 /* ToDoListUITests */,
+				3FB3F78B1E2FBD2400929DDB /* widget */,
+				3FB3F79E1E2FBEAB00929DDB /* wiget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3FB3F78A1E2FBD2400929DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB3F79D1E2FBEAB00929DDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB3F7A81E2FBEAB00929DDB /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FBCB17E1DF8FBD700319552 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +400,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3FB3F7881E2FBD2400929DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FB3F79B1E2FBEAB00929DDB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB3F7A51E2FBEAB00929DDB /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3FBCB17C1DF8FBD700319552 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +444,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3FB3F7951E2FBD2400929DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FB3F78B1E2FBD2400929DDB /* widget */;
+			targetProxy = 3FB3F7941E2FBD2400929DDB /* PBXContainerItemProxy */;
+		};
+		3FB3F7AB1E2FBEAB00929DDB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3FB3F79E1E2FBEAB00929DDB /* wiget */;
+			targetProxy = 3FB3F7AA1E2FBEAB00929DDB /* PBXContainerItemProxy */;
+		};
 		3FBCB1961DF8FBD700319552 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3FBCB17F1DF8FBD700319552 /* ToDoList */;
@@ -301,6 +467,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3FB3F7A61E2FBEAB00929DDB /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3FB3F7A71E2FBEAB00929DDB /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		3FBCB1871DF8FBD700319552 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -320,6 +494,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3FB3F7971E2FBD2400929DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2PJVDDC92U;
+				INFOPLIST_FILE = widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ne1ghbor.ToDoList.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3FB3F7981E2FBD2400929DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2PJVDDC92U;
+				INFOPLIST_FILE = widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ne1ghbor.ToDoList.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3FB3F7AE1E2FBEAB00929DDB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2PJVDDC92U;
+				INFOPLIST_FILE = wiget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ne1ghbor.ToDoList.wiget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3FB3F7AF1E2FBEAB00929DDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2PJVDDC92U;
+				INFOPLIST_FILE = wiget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ne1ghbor.ToDoList.wiget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		3FBCB1A61DF8FBD700319552 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -414,6 +640,7 @@
 		3FBCB1A91DF8FBD700319552 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2PJVDDC92U;
 				INFOPLIST_FILE = ToDoList/Info.plist;
@@ -428,6 +655,7 @@
 		3FBCB1AA1DF8FBD700319552 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2PJVDDC92U;
 				INFOPLIST_FILE = ToDoList/Info.plist;
@@ -496,6 +724,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3FB3F7991E2FBD2400929DDB /* Build configuration list for PBXNativeTarget "widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB3F7971E2FBD2400929DDB /* Debug */,
+				3FB3F7981E2FBD2400929DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3FB3F7AD1E2FBEAB00929DDB /* Build configuration list for PBXNativeTarget "wiget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FB3F7AE1E2FBEAB00929DDB /* Debug */,
+				3FB3F7AF1E2FBEAB00929DDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		3FBCB17B1DF8FBD700319552 /* Build configuration list for PBXProject "ToDoList" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
