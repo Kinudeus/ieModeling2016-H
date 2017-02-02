@@ -36,6 +36,14 @@
                                     <segue destination="Fu7-kl-jDj" kind="show" id="bY2-J8-xNb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSC-jE-OBU">
+                                <rect key="frame" x="137" y="359" width="101" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="MoneyManage"/>
+                                <connections>
+                                    <segue destination="lQc-aA-5PY" kind="show" id="Ogt-CL-JUg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -43,6 +51,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mgO-g9-MjI">
+            <objects>
+                <viewController id="lQc-aA-5PY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="C7t-Wt-oue"/>
+                        <viewControllerLayoutGuide type="bottom" id="cCq-KD-SyK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s5q-hf-srQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9v-3X-3sR">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="wFD-Aj-NeE">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Iqr-v3-IMi">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="HRf-NC-oRp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMe-cs-rye" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="811"/>
         </scene>
         <!--To Do List-->
         <scene sceneID="vV6-nc-9jZ">
@@ -83,7 +124,7 @@
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vHc-Ct-jMf" id="RCg-HC-WVB">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -158,6 +199,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vKM-2m-XMQ"/>
+        <segue reference="HFs-Fx-gbB"/>
+        <segue reference="bY2-J8-xNb"/>
     </inferredMetricsTieBreakers>
 </document>
