@@ -424,7 +424,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ne1ghbor.Modeling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -438,7 +437,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ne1ghbor.Modeling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -515,7 +513,6 @@
 				3F18004B1E41A46300362399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		3F18004C1E41A46300362399 /* Build configuration list for PBXNativeTarget "ModelingTests" */ = {
 			isa = XCConfigurationList;
@@ -524,7 +521,6 @@
 				3F18004E1E41A46300362399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		3F18004F1E41A46300362399 /* Build configuration list for PBXNativeTarget "ModelingUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,7 +529,6 @@
 				3F1800511E41A46300362399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
