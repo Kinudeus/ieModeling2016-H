@@ -8,7 +8,16 @@
 
 import UIKit
 
-class changeMonney: UIViewController{
+class ChangeMonney: UIViewController{
+   
+    //現在の為替レートを一時的に設定
+    let usd2Jpy:Double = 106.0
+    
+    @IBAction func calcButton(_ sender: AnyObject) {
+        var result:Double = 0
+        result = Double(inputFiled.text!)!/usd2Jpy
+        resultFiled.text = String(Int(result))
+    }
     
     
     override func viewDidLoad(){
@@ -21,7 +30,10 @@ class changeMonney: UIViewController{
         //Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var inputFiled: UITextField!
     
+    @IBOutlet weak var resultFiled: UITextField!
+
     
 }
 

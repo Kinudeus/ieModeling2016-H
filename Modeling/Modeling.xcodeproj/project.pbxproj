@@ -16,6 +16,7 @@
 		3F1800451E41A46300362399 /* ModelingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1800441E41A46300362399 /* ModelingUITests.swift */; };
 		3F1800531E41A57200362399 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1800521E41A57200362399 /* ToDoList.swift */; };
 		3F1800551E41A82700362399 /* AddToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1800541E41A82700362399 /* AddToDo.swift */; };
+		5219D6771E5316A000E84E1E /* ChangeMonney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5219D6761E5316A000E84E1E /* ChangeMonney.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3F1800461E41A46300362399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F1800521E41A57200362399 /* ToDoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		3F1800541E41A82700362399 /* AddToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToDo.swift; sourceTree = "<group>"; };
+		5219D6761E5316A000E84E1E /* ChangeMonney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeMonney.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3F1800261E41A46300362399 /* ViewController.swift */,
 				3F1800541E41A82700362399 /* AddToDo.swift */,
 				3F1800521E41A57200362399 /* ToDoList.swift */,
+				5219D6761E5316A000E84E1E /* ChangeMonney.swift */,
 				3F1800281E41A46300362399 /* Main.storyboard */,
 				3F18002B1E41A46300362399 /* Assets.xcassets */,
 				3F18002D1E41A46300362399 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 				3F1800271E41A46300362399 /* ViewController.swift in Sources */,
 				3F1800531E41A57200362399 /* ToDoList.swift in Sources */,
 				3F1800251E41A46300362399 /* AppDelegate.swift in Sources */,
+				5219D6771E5316A000E84E1E /* ChangeMonney.swift in Sources */,
 				3F1800551E41A82700362399 /* AddToDo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +517,7 @@
 				3F18004B1E41A46300362399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F18004C1E41A46300362399 /* Build configuration list for PBXNativeTarget "ModelingTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +526,7 @@
 				3F18004E1E41A46300362399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F18004F1E41A46300362399 /* Build configuration list for PBXNativeTarget "ModelingUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +535,7 @@
 				3F1800511E41A46300362399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
