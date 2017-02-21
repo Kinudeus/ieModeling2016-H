@@ -16,6 +16,7 @@
 		3F1800451E41A46300362399 /* ModelingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1800441E41A46300362399 /* ModelingUITests.swift */; };
 		3F1800531E41A57200362399 /* ToDoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1800521E41A57200362399 /* ToDoList.swift */; };
 		3F1800551E41A82700362399 /* AddToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1800541E41A82700362399 /* AddToDo.swift */; };
+		3F3AA1BE1E5C4A0B009FF529 /* ChangeMonney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3AA1BD1E5C4A0B009FF529 /* ChangeMonney.swift */; };
 		BC529BCA1E5BACC000D5102D /* MoneyManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC529BC91E5BACC000D5102D /* MoneyManage.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		3F1800461E41A46300362399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F1800521E41A57200362399 /* ToDoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoList.swift; sourceTree = "<group>"; };
 		3F1800541E41A82700362399 /* AddToDo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToDo.swift; sourceTree = "<group>"; };
+		3F3AA1BD1E5C4A0B009FF529 /* ChangeMonney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeMonney.swift; sourceTree = "<group>"; };
 		BC529BC91E5BACC000D5102D /* MoneyManage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MoneyManage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				3F1800521E41A57200362399 /* ToDoList.swift */,
 				BC529BC91E5BACC000D5102D /* MoneyManage.swift */,
 				3F1800281E41A46300362399 /* Main.storyboard */,
+				3F3AA1BD1E5C4A0B009FF529 /* ChangeMonney.swift */,
 				3F18002B1E41A46300362399 /* Assets.xcassets */,
 				3F18002D1E41A46300362399 /* LaunchScreen.storyboard */,
 				3F1800301E41A46300362399 /* Info.plist */,
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC529BCA1E5BACC000D5102D /* MoneyManage.swift in Sources */,
+				3F3AA1BE1E5C4A0B009FF529 /* ChangeMonney.swift in Sources */,
 				3F1800271E41A46300362399 /* ViewController.swift in Sources */,
 				3F1800531E41A57200362399 /* ToDoList.swift in Sources */,
 				3F1800251E41A46300362399 /* AppDelegate.swift in Sources */,
