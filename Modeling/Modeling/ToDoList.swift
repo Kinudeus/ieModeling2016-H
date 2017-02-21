@@ -14,6 +14,16 @@ class ToDoList: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //    リストを表示するTableViewの追加
     @IBOutlet weak var todolistTable: UITableView!
     
+    @IBAction func editingButton(_ sender: Any) {
+        if todolistTable.isEditing == false {
+            todolistTable.isEditing = true
+        }   else{
+            todolistTable.isEditing = false
+        }
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +33,8 @@ class ToDoList: UIViewController, UITableViewDelegate, UITableViewDataSource {
         if UserDefaults.init().object(forKey: "todoList") != nil {
             todoItem = UserDefaults.init().object(forKey: "todoList") as! [String]
         }
+        
+//        todolistTable.isEditing = true
     }
     
     //配列のカウント
@@ -46,6 +58,29 @@ class ToDoList: UIViewController, UITableViewDelegate, UITableViewDataSource {
             UserDefaults.init().set(todoItem, forKey: "todoList")
         }
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    //並び替え時に呼ばれるメソッド
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath){
+        
+//        //移動されたデータを取得する。
+//        let moveData = todolistTable.cellForRow(at: sourceIndexPath as IndexPath)?.textLabel!.text
+//        
+//        //元の位置のデータを配列から削除する。
+//        todoItem.remove(at: sourceIndexPath.row)
+//        
+//        //移動先の位置にデータを配列に挿入する。
+//        todoItem.insert(moveData!, at:destinationIndexPath.row)
+    }
+    
+    
     
     
     
