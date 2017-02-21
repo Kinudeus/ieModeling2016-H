@@ -18,11 +18,24 @@ class ChangeMonney: UIViewController {
     
     @IBAction func calcButton(_ sender: Any) {
         var result:Double = 0
-        result = Double(jpyFiled.text!)!/usd2Jpy
-        usdFiled.text = String(Int(result))
+        if isOnlyNumber(jpyFiled.text!) {
+            result = Double(jpyFiled.text!)!/usd2Jpy
+            usdFiled.text = String(Int(result))
+        } else if isOnlyNumber(usdFiled.text!) {
+            result = Double(usdFiled.text!)! * usd2Jpy
+            jpyFiled.text = String(Int(result))
+        }
     }
     
+    @IBAction func resetButton(_ sender: Any) {
+        jpyFiled.text = ""
+        usdFiled.text = ""
+    }
     
+    func isOnlyNumber(_ str:String) -> Bool {
+        let predicate = NSPredicate(format: "SELF MATCHES '\\\\d+'")
+        return predicate.evaluate(with: str)
+    }
     
 
     override func viewDidLoad() {
