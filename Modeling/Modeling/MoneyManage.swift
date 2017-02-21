@@ -38,7 +38,7 @@ class MoneyManage: UIViewController {
     @IBOutlet weak var NumberField: UITextField!
     
     @IBAction func ADD(_ sender: Any) {
-     if NumberField.text != "" {
+     if isOnlyNumber(NumberField.text!) {
             result += Int(NumberField.text!)!
             UserDefaults.init().set(result, forKey: "MM")
         }
@@ -47,7 +47,7 @@ class MoneyManage: UIViewController {
     }
     
     @IBAction func SUB(_ sender: Any) {
-        if NumberField.text != "" {
+        if isOnlyNumber(NumberField.text!) {
             
             result -= Int(NumberField.text!)!
             UserDefaults.init().set(result, forKey: "MM")
@@ -61,6 +61,12 @@ class MoneyManage: UIViewController {
         UserDefaults.init().set(result, forKey: "MM")
         
         MoneyLabel.text = String(result)
+    }
+    
+    //入力された文字列が数字か判定
+    func isOnlyNumber(_ str:String) -> Bool {
+        let predicate = NSPredicate(format: "SELF MATCHES '\\\\d+'")
+        return predicate.evaluate(with: str)
     }
 
     /*
