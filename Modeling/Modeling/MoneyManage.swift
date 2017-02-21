@@ -55,6 +55,13 @@ class MoneyManage: UIViewController {
         
         MoneyLabel.text = String(result)
     }
+    
+    @IBAction func reset(_ sender: Any) {
+        result = 0
+        UserDefaults.init().set(result, forKey: "MM")
+        
+        MoneyLabel.text = String(result)
+    }
 
     /*
     // MARK: - Navigation
