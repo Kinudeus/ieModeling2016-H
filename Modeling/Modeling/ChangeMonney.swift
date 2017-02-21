@@ -18,12 +18,17 @@ class ChangeMonney: UIViewController {
     
     @IBAction func calcButton(_ sender: Any) {
         var result:Double = 0
+        jpyFiled.text = jpyFiled.text?.applyingTransform(.fullwidthToHalfwidth, reverse: false)
+        usdFiled.text = usdFiled.text?.applyingTransform(.fullwidthToHalfwidth, reverse: false)
         if isOnlyNumber(jpyFiled.text!) {
             result = Double(jpyFiled.text!)!/usd2Jpy
             usdFiled.text = String(Int(result))
         } else if isOnlyNumber(usdFiled.text!) {
             result = Double(usdFiled.text!)! * usd2Jpy
             jpyFiled.text = String(Int(result))
+        } else {
+            jpyFiled.text = ""
+            usdFiled.text = ""
         }
     }
     

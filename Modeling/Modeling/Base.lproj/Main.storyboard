@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -80,8 +79,8 @@
                                 <rect key="frame" x="0.0" y="28" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="wFD-Aj-NeE">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Iqr-v3-IMi">
+                                    <navigationItem title="MoneyManage" id="wFD-Aj-NeE">
+                                        <barButtonItem key="leftBarButtonItem" title="MainMenu" id="Iqr-v3-IMi">
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="HRf-NC-oRp"/>
                                             </connections>
@@ -105,7 +104,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdA-De-ZPE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0円" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdA-De-ZPE">
                                 <rect key="frame" x="187" y="127" width="394" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -142,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMe-cs-rye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="807"/>
+            <point key="canvasLocation" x="1019.53125" y="806.8359375"/>
         </scene>
         <!--Change Monney-->
         <scene sceneID="Jcd-LN-1JC">
@@ -197,22 +196,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGo-bI-zAk">
-                                <rect key="frame" x="336" y="486" width="97" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="変換"/>
-                                <connections>
-                                    <action selector="calcButton:" destination="Wf0-KL-EmR" eventType="touchUpInside" id="Inn-LT-2oM"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lA-Tp-QbC">
                                 <rect key="frame" x="269" y="583" width="230" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="リセット"/>
+                                <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="resetButton:" destination="Wf0-KL-EmR" eventType="touchUpInside" id="xyF-LB-MoB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGo-bI-zAk">
+                                <rect key="frame" x="272" y="486" width="225" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Conversion"/>
+                                <connections>
+                                    <action selector="calcButton:" destination="Wf0-KL-EmR" eventType="touchUpInside" id="Inn-LT-2oM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -244,18 +243,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="ToDoList" id="bIW-KX-FRt">
-                                        <leftBarButtonItems>
-                                            <barButtonItem title="MainMenu" id="N8s-kg-cSa">
-                                                <connections>
-                                                    <segue destination="BYZ-38-t0r" kind="show" id="HFs-Fx-gbB"/>
-                                                </connections>
-                                            </barButtonItem>
-                                            <barButtonItem systemItem="edit" id="CT4-S5-pSC">
-                                                <connections>
-                                                    <action selector="editingButton:" destination="Fu7-kl-jDj" id="z8i-2s-WIR"/>
-                                                </connections>
-                                            </barButtonItem>
-                                        </leftBarButtonItems>
+                                        <barButtonItem key="leftBarButtonItem" title="MainMenu" id="N8s-kg-cSa">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="HFs-Fx-gbB"/>
+                                            </connections>
+                                        </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Psa-Ud-VOD">
                                             <connections>
                                                 <segue destination="6Mk-Y8-pCD" kind="show" id="yIl-Bd-Uc4"/>

@@ -37,23 +37,27 @@ class MoneyManage: UIViewController {
     
     @IBOutlet weak var NumberField: UITextField!
     
+    
     @IBAction func ADD(_ sender: Any) {
-     if isOnlyNumber(NumberField.text!) {
+        NumberField.text = NumberField.text?.applyingTransform(.fullwidthToHalfwidth, reverse: false)
+        if isOnlyNumber(NumberField.text!) {
             result += Int(NumberField.text!)!
             UserDefaults.init().set(result, forKey: "MM")
+            MoneyLabel.text = String(result) + "円"
+        } else{
+            NumberField.text = ""
         }
-        MoneyLabel.text = String(result)
-    
     }
     
     @IBAction func SUB(_ sender: Any) {
+        NumberField.text = NumberField.text?.applyingTransform(.fullwidthToHalfwidth, reverse: false)
         if isOnlyNumber(NumberField.text!) {
-            
             result -= Int(NumberField.text!)!
             UserDefaults.init().set(result, forKey: "MM")
+            MoneyLabel.text = String(result) + "円"
+        } else{
+            NumberField.text = ""
         }
-        
-        MoneyLabel.text = String(result)
     }
     
     @IBAction func reset(_ sender: Any) {
