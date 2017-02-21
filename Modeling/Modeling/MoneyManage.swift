@@ -8,10 +8,26 @@
 
 import UIKit
 
+var result: Int = 0
+
 class MoneyManage: UIViewController {
 
+    @IBOutlet weak var MoneyLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (UserDefaults.init().object(forKey: "MM")) != nil {
+        
+            result = UserDefaults.init().object(forKey: "MM") as! Int
+            
+            MoneyLabel.text = String(result)
+            
+        }
+        
+        
+        MoneyLabel.textAlignment = .center
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +37,26 @@ class MoneyManage: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var NumberField: UITextField!
+    
+    @IBAction func ADD(_ sender: Any) {
+     if NumberField.text != "" {
+            result += Int(NumberField.text!)!
+            UserDefaults.init().set(result, forKey: "MM")
+        }
+        MoneyLabel.text = String(result)
+    
+    }
+    
+    @IBAction func SUB(_ sender: Any) {
+        if NumberField.text != "" {
+            
+            result -= Int(NumberField.text!)!
+            UserDefaults.init().set(result, forKey: "MM")
+        }
+        
+        MoneyLabel.text = String(result)
+    }
 
     /*
     // MARK: - Navigation
