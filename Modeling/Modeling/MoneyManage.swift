@@ -14,7 +14,6 @@ class MoneyManage: UIViewController {
 
     @IBOutlet weak var MoneyLabel: UILabel!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,9 +25,8 @@ class MoneyManage: UIViewController {
             
         }
         
-        
         MoneyLabel.textAlignment = .center
-
+        
         // Do any additional setup after loading the view.
     }
 
